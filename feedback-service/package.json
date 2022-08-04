@@ -1,11 +1,9 @@
 {
-  "name": "conference",
+  "name": "feedback-service",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A service to read and post feedback",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "node bin/run | bunyan"
   },
   "keywords": [],
   "author": "",
@@ -13,13 +11,13 @@
   "dependencies": {
     "amqplib": "^0.10.1",
     "axios": "^0.18.0",
-    "body-parser": "^1.18.3",
-    "express": "^4.16.3",
-    "http-errors": "^1.7.0",
-    "pug": "^2.0.3"
+    "bunyan": "^1.8.12",
+    "express": "^4.16.4"
   },
   "devDependencies": {
-    "eslint": "^5.15.2",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^5.14.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0"
   }
